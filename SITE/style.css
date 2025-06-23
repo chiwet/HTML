@@ -1,0 +1,78 @@
+body {
+    display: inline;
+}
+.message.true{
+    color: green;
+    font-size: xx-large;
+    text-shadow: 2px 2px 4px green;
+    animation-name: yeah;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes yeah {
+    0% {
+        color: green;
+    }
+    50%{
+        color: lightblue;
+        text-shadow: -2px -2px 4px lightblue;
+    }
+    100% {
+        color: green;
+        text-shadow: 2px 2px 4px green;
+    }
+}
+
+.back {
+    background-color: white;
+    transition: background-color 5s;
+}
+.message.false {
+    color: red;
+    font-size: xx-large;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    position: relative;
+}
+.close:hover {
+    cursor: grab;
+}
+.main {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 200px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main * {
+    margin: 10px;
+}
+button {
+    background-color: lightblue;
+    color: rgb(56, 70, 75);
+}
+#account {
+    display: none;
+}
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
